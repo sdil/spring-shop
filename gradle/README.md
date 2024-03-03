@@ -10,3 +10,4 @@ This is a learning project that uses Spring Boot and built using unnecessarily c
 - Spring Session - Persist user sessions
 - Spring Kafka - Emit events to Kafka and consume the messages on the workers
 - Spring Gateway - Route the requests to relevant microservices
+- Testcontainers - Run unittests on real containers
