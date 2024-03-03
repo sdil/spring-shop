@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = 'springshop'
-include('app', 'list', 'utilities')
+include('app', 'list', 'utilities', 'order')
