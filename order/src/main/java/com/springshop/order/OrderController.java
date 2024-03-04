@@ -10,17 +10,15 @@ import java.util.List;
 @RequestMapping("/orders")
 public class OrderController {
 
-//    private final OrderService orderService;
-    private final OrderRepository orderRepostory;
 
-//    public OrderController(OrderService orderService, OrderRepository orderRepostory) {
-    public OrderController(OrderRepository orderRepostory) {
-//        this.orderService = orderService;
-        this.orderRepostory = orderRepostory;
+    private final OrderService orderService;
+
+    public OrderController(OrderService orderService) {
+        this.orderService = orderService;
     }
 
     @GetMapping("/{userId}")
     public List<Order> getUserOrders(@PathVariable Long userId) {
-        return this.orderRepostory.findByUserId(userId);
+        return this.orderService.getUserOrders(userId);
     }
 }
