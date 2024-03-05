@@ -1,9 +1,11 @@
 package com.springshop.order;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name="Orders")
+@Data
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
